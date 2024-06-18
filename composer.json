@@ -1,0 +1,28 @@
+{
+    "name": "kishanjasani/kishan-jasani",
+    "description": "A plugin that retrieves data from a remote API endpoint, and makes that data accessible from an API endpoint on the WordPress site. The data will be displayed via a custom block and on an admin WordPress page.",
+    "license": "GPL-2.0+",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Kishan Jasani",
+            "email": "kishanjasani007@yahoo.in"
+        }
+    ],
+	"support": {
+        "src": "https://github.com/kishanjasani/kishan-jasani",
+        "issues": "https://github.com/kishanjasani/kishan-jasani/issues"
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "KishanJasani\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
