@@ -26,6 +26,6 @@ class Plugin {
 	 * @return void
 	 */
 	public static function setup() {
-
+		Endpoint::get_instance();
 	}
 }
