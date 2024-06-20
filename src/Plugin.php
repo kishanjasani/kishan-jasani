@@ -28,6 +28,10 @@ final class Plugin {
 	 * @return void
 	 */
 	public static function setup() {
+		if ( is_admin() ) {
+			Settings::get_instance();
+		}
+
 		Endpoint::get_instance();
 
 		if ( self::is_wp_cli() ) {

@@ -1,0 +1,117 @@
+@import "variables";
+@import "block-table";
+
+#wpcontent {
+	padding-left: 0 !important;
+}
+
+#kj-admin-header {
+	border-top: 3px solid $orange;
+	padding: 24px 20px;
+
+	.kj-admin-logo {
+		display: block;
+		margin: 0;
+		max-width: 242px;
+	}
+}
+
+#wrap {
+	margin: 0;
+}
+
+.kj-page {
+
+	&__title {
+		min-height: 58px;
+		background-color: $bgColor;
+		font-size: 18px;
+		margin: 0 0 20px 0;
+		padding: 0 20px;
+
+		span {
+			box-shadow: none;
+			color: $tabColor;
+			display: inline-block;
+			margin-right: 30px;
+			padding: 20px 0 18px 0;
+			text-decoration: none;
+			border-bottom: 2px solid $orange;
+		}
+	}
+
+	&__heading-container {
+		padding: 20px 0;
+		padding-top: 10px;
+		border-bottom: 1px solid #e4e4e4;
+	}
+
+	&__heading {
+		margin: 0;
+		max-width: 1005px;
+
+		h3 {
+			font-size: 20px;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+
+		.desc {
+			margin: 10px 0 0;
+			color: #555;
+		}
+	}
+
+	&__content {
+		padding: 0 20px;
+	}
+
+	&__banner {
+		background-color: #fff;
+		padding: 25px 20px;
+		border: 1px solid $bannerBorderColor;
+		position: relative;
+		overflow: auto;
+		margin: 30px 0;
+	}
+
+	&__refresh {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+
+		button {
+			background: none;
+			border: none;
+			color: $buttonTextColor;
+			cursor: pointer;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	table {
+		margin-top: 2em;
+
+		caption {
+			position: absolute;
+			max-width: 50em;
+			top: 10px;
+
+			.notice {
+				margin: 0;
+
+				p {
+					text-align: left;
+					margin: 0.1em 0;
+				}
+
+				.notice-dismiss {
+					padding: 4px;
+				}
+			}
+		}
+	}
+
+	@include block-table;
+}

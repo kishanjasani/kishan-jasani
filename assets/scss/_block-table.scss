@@ -1,0 +1,31 @@
+@mixin block-table {
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		white-space: nowrap;
+
+		thead {
+			border: 1px solid $borderColor;
+			font-size: $header;
+		}
+
+		tbody {
+			border-right: 1px solid $borderColor;
+			border-left: 1px solid $borderColor;
+			border-bottom: 1px solid $borderColor;
+			font-size: $content;
+		}
+
+		th {
+			font-weight: 600;
+		}
+
+		th,
+		td {
+			padding: 1em;
+			justify-content: center;
+			border-right: 1px solid $borderColor;
+		}
+	}
+}
