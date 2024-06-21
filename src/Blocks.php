@@ -39,7 +39,6 @@ class Blocks {
 	 */
 	public function register_blocks() {
 		register_block_type( KISHAN_JASANI_DIR . '/build/blocks/users' );
-		register_block_type( KISHAN_JASANI_DIR . '/build/blocks/todo-list' );
 	}
 
 }
