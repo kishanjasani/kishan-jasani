@@ -39,3 +39,11 @@ To create a production build of assets:
 ```bash
 npm run build
 ```
+
+## WP CLI command
+
+Use this command to flush transient cache.
+
+```bash
+wp kj flush
+```
