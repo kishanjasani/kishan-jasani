@@ -137,7 +137,10 @@ const handleClick = async ( e ) => {
 	const table = $( selectors.table );
 	if ( ! table.length ) {
 		createNotice(
-			__( 'Something went wrong! Data table not found!', 'kishan-jasani' ),
+			__(
+				'Something went wrong! Data table not found!',
+				'kishan-jasani'
+			),
 			'notice-error'
 		);
 		disableElement( e.target, false );
