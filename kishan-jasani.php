@@ -31,5 +31,5 @@ if ( is_readable( KISHAN_JASANI_DIR . '/vendor/autoload.php' ) ) {
 }
 
 if ( class_exists( KishanJasani\Plugin::class ) ) {
-	KishanJasani\Plugin::setup();
+	new KishanJasani\Plugin();
 }

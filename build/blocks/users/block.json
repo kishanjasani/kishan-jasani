@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kishan-jasani/users",
+  "version": "0.1.0",
+  "title": "Users",
+  "category": "text",
+  "icon": "groups",
+  "description": "Show users from API in a table view.",
+  "supports": {},
+  "textdomain": "kishan-jasani",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "keywords": [
+    "users",
+    "kishan",
+    "api-users"
+  ],
+  "attributes": {
+    "hide": {
+      "type": "array",
+      "default": []
+    },
+    "api": {
+      "type": "object",
+      "default": {
+        "url": "kishan-jasani/v1",
+        "request": "users"
+      }
+    }
+  },
+  "render": "file:./render.php"
+}

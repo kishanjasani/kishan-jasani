@@ -8,8 +8,9 @@
 		"build": "npm-run-all --parallel build:*",
 		"lint": "npm-run-all --parallel lint:*",
 		"start:blocks": "wp-scripts start --webpack-src-dir=blocks --output-path=build/blocks",
-		"build:blocks": "wp-scripts build --webpack-src-dir=blocks",
+		"build:blocks": "wp-scripts build --webpack-src-dir=blocks --output-path=build/blocks",
 		"start:assets": "wp-scripts start assets/admin.js --webpack-src-dir=assets --output-path=build/assets",
+		"build:assets": "wp-scripts build assets/admin.js --webpack-src-dir=assets --output-path=build/assets",
 		"lint:format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:css:fix": "wp-scripts lint-style --fix",
@@ -19,8 +20,7 @@
 	"author": "Kishan Jasani",
 	"license": "ISC",
 	"devDependencies": {
-		"@wordpress/scripts": "^28.1.0",
-		"chokidar-cli": "^3.0.0",
+		"@wordpress/scripts": "^27.9.0",
 		"npm-run-all": "^4.1.5",
 		"sass": "^1.77.6"
 	}

@@ -1,0 +1,9 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/block-table";
+
+.wp-block-kishan-jasani-users {
+
+	overflow: auto;
+
+	@include block-table;
+}

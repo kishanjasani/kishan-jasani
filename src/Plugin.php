@@ -23,23 +23,31 @@ final class Plugin {
 	use Singleton;
 
 	/**
+	 * Constructor.
+	 */
+	public function __construct() {
+		$this->setup();
+	}
+
+	/**
 	 * Setup all instance required on plugin initialization.
 	 *
 	 * @return void
 	 */
-	public static function setup() {
+	public function setup() {
 		if ( is_admin() ) {
 			Settings::get_instance();
 		}
 
 		Endpoint::get_instance();
+		Blocks::get_instance();
 
-		if ( self::is_wp_cli() ) {
+		if ( $this->is_wp_cli() ) {
 			WP_CLI::add_command( 'kj', Cli\WpCliCommand::class );
 		}
 	}
 
-	private static function is_wp_cli() {
+	private function is_wp_cli() {
 		return defined( 'WP_CLI' )
 			&& class_exists( WP_CLI::class )
 			&& class_exists( WP_CLI_Command::class );
