@@ -7,7 +7,7 @@ import {
 	Spinner,
 } from '@wordpress/components';
 import { useSelect, dispatch } from '@wordpress/data';
-import _ from 'lodash';
+import {isEmpty} from './utils';
 
 export default function edit( {
 	setAttributes,
@@ -61,7 +61,7 @@ export default function edit( {
 		);
 	}
 
-	if ( isLoading || _.isEmpty( response ) ) {
+	if ( isLoading || isEmpty( response ) ) {
 		return (
 			<div
 				{
